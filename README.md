@@ -18,8 +18,8 @@ Image --> Type --> 8-bit
 
 # Step 4: Setting Image Threshold  
 Image --> Adjust --> Threshold  
-Slider 1: 0  
-Slider 2: 158  
+Top Slider: 0  
+Bottom Slider: 158  
 <img width="280" height="311" alt="image" src="https://github.com/user-attachments/assets/cf971a67-8064-4f3f-bb70-27d0aef13190" />  
 <img width="545" height="453" alt="image" src="https://github.com/user-attachments/assets/5a0bdac3-48ae-4b05-8e39-d2cb024e8db5" />  
 Although by increasing the value Slider 2 I was able to fill in the hollow spaces within embryos, it also ended up making the edges of embryos (especially clustered ones) less defined as well as selecting unnecessary noise particles in the background. Hence, I decided to go with the auto setting of 158, and compensate the hollow embryos using the "Fill Holes" feature in the next step.  
@@ -56,6 +56,19 @@ After going through what each checkbox does, I decided to select the following o
 
 # Step 8: Analyzing Particles  
 Analyze --> Analyze Particles  
+For Size, I set the lower limit to 15 um^2 as this is the perfect size to make sure all main embryos are included, while random non-embryo particles and small sections of embryos incorrectly segmented by Watershed are not included. The upper limit is Infinity.  
+For Circularity, I set the lower limit to 0.20 to exclude the scale (which the software was also counting as a particle). The scale, being a straight line, has a very low (nearly 0) Circularity and thus be easily excluded.  
+I also selected the checkbox "Exclude on edges" to avoid embryos on the sides which are not entirely visible being counted.
+For Show, I selected Outlines from the dropdown, as this showed me the outline of each embryo it was counting as well as its corresponding serial number in the final results. This significantly helped me in decided the value for Size and Circularity, as I knew the serial numbers of which particles to exclude and could determine how to change the parameters to do so.  
+<img width="262" height="332" alt="image" src="https://github.com/user-attachments/assets/15bdf590-639b-44d5-bef7-a166250f66b2" />  
+
+# Step 9: Results  
+I received 3 outputs-  
+1. Results: This contained each embryo serially numbered with its Area, X and Y coordinates of Centroid, Perimeter, Circularity, AR (Aspect Ratio), Roundness and Solidity.  
+2. Summary: This contained Count, Total Area, Average Size, %Area, Average Perimeter, Avergae Circularity and and Average Solidity.  
+3. Drawing of embryos.jpg: This contained the Outlines of each embryo, numbered serially as per the Results file.  
+
+# I have attached the Results, Summary, Drawing of embryos.jpg, the final processed image, and the original image I worked on in main.
 
 
 

@@ -37,10 +37,10 @@ After careful consideration, I decided not to proceed with using the Watershed f
 The image I have selected already has a scale at the bottom right, so I can use it as a reference to measure all cell sizes in their actual metric units rather than pixels.
 I start by zooming into the bottom right corner by hovering my cursor over it and using Ctrl + Scroll Wheel to zoom in. Then, I use the Line Tool to draw a line, making sure I align both ends of each line (the line is in yellow) accurately to the ends of the scale. For panning around the image, I used the Scrolling Tool (the icon that looks like a hand).  
 <img width="545" height="453" alt="image" src="https://github.com/user-attachments/assets/420a3e5c-0f60-4dc5-83ff-ef7b042e033d" />  
-Next, I went to Analyze --> Set Scale
+Next, I went to Analyze --> Set Scale  
 Fiji automatically gave me the distance in pixels of the line I had drawn.  
-I set the known distance to "100", and the Unit of Length to "um" (micrometre), corresponding to the scale in the original picture.
-<img width="249" height="290" alt="image" src="https://github.com/user-attachments/assets/4c749601-cf35-4371-bf2d-ae5aeafbe8d3" />
+I set the known distance to "100", and the Unit of Length to "um" (micrometre), corresponding to the scale in the original picture.  
+<img width="249" height="290" alt="image" src="https://github.com/user-attachments/assets/4c749601-cf35-4371-bf2d-ae5aeafbe8d3" />  
 
 
 

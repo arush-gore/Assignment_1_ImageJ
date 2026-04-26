@@ -22,16 +22,19 @@ Slider 1: 0
 Slider 2: 158  
 <img width="280" height="311" alt="image" src="https://github.com/user-attachments/assets/cf971a67-8064-4f3f-bb70-27d0aef13190" />  
 <img width="545" height="453" alt="image" src="https://github.com/user-attachments/assets/5a0bdac3-48ae-4b05-8e39-d2cb024e8db5" />  
-Although by increasing the value Slider 2 I was able to fill in the hollow spaces within embryos, it also ended up making the edges of embryos (especially clustered ones at the bottom left) less defined as well as selecting unnecessary noise particles in the background. Hence, I decided to go with the auto setting of 158, and compensate the hollow embryos using the "Fill Holes" feature in the next step.  
+Although by increasing the value Slider 2 I was able to fill in the hollow spaces within embryos, it also ended up making the edges of embryos (especially clustered ones) less defined as well as selecting unnecessary noise particles in the background. Hence, I decided to go with the auto setting of 158, and compensate the hollow embryos using the "Fill Holes" feature in the next step.  
 I would also like you to note that although the instructions you gave asked the embryo to be black and the background to be white in your protocol (I did so by selecting the "Dark Background" checkbox in Threshold Settings), on further processing I was not getting the results I wanted at the "Analyze Particles" step. It seemed to be analysing tiny particles around the embryo cell rather than the embryo itself. To troubleshoot, I tried following the same steps without selecting "Dark Background", and it worked, and hence that is what I'm following. 
 <img width="545" height="453" alt="image" src="https://github.com/user-attachments/assets/d1187ac9-920e-41bd-8dfc-77b193258a46" />  
 
-# Step 5: Fill Holes and Convert to Mask  
+# Step 5: Fill Holes, Convert to Mask and Watershed  
 To fill the hollow embryos remaining.  
 Process --> Binary --> Fill Holes  
 <img width="545" height="453" alt="image" src="https://github.com/user-attachments/assets/fec1bd18-6070-4aa1-a6c4-7bf57286e54c" />  
 Process --> Binary --> Covert to Mask  
-After careful consideration, I decided not to proceed with using the Watershed function, as it was separating two cells of the same embryo as well, which was undesirable. The image is better as it is.  
+After careful consideration, I decided to proceed with using the Watershed function. Using the Watershed function, I was getting a count of 30 embryos, while without using it, I was getting a count of 23 embryos. By manually counting them, I determined that there are 27 embryos in the image. The reason why the Watershed function is giving slightly more embryos than the actual number is due to it incorrectly separating embryos which contain fewer cells, for which it is dividing the embryo into two parts. For example, for the 2-celled embryo in the top right, it is counting it as 2 separate embryos instead of one. However, without using Watershed, some closely clustered embryos (such as the 2 embryos on the bottom left) are being counted as 1 embryo. Since 30 is closer to 27, I decided to use the Watershed function.  
+Process--> Binary --> Watershed  
+<img width="545" height="453" alt="image" src="https://github.com/user-attachments/assets/4d2b30cc-588f-4d1b-ba3a-af398ef38bb8" />
+
 
 # Step 6: Setting the Scale using Line Tool  
 The image I have selected already has a scale at the bottom right, so I can use it as a reference to measure all cell sizes in their actual metric units rather than pixels.

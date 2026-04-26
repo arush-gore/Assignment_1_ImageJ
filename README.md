@@ -70,7 +70,7 @@ I received 3 outputs-
 <img width="892" height="713" alt="image" src="https://github.com/user-attachments/assets/ab4aa4b2-591a-498b-be59-d47932684270" />
 
 
-# I have attached the Results, Summary, the Final Processed Image, and the Original Image in `main`.
+**# I have attached the Results, Summary, the Final Processed Image, and the Original Image in `main`.**
 
 
 

@@ -66,9 +66,9 @@ For Show, I selected Outlines from the dropdown, as this showed me the outline o
 I received 3 outputs-  
 1. Results: This contained each embryo serially numbered with its Area, X and Y coordinates of Centroid, Perimeter, Circularity, AR (Aspect Ratio), Roundness and Solidity.  
 2. Summary: This contained Count, Total Area, Average Size, %Area, Average Perimeter, Avergae Circularity and and Average Solidity.  
-3. Drawing of embryos.jpg: This contained the Outlines of each embryo, numbered serially as per the Results file.  (This was for my reference only, but I have attached it anyways!)
+3. Drawing: This contained the Outlines of each embryo, numbered serially as per the Results file.  (This was for my reference only, but I have attached it anyways!)
 
-# I have attached the Results, Summary, Drawing of embryos.jpg, the final processed image, and the original image I worked on in main.
+# I have attached the Results, Summary, Drawing, the Final Processed Image, and the Original Image I worked on in `main`.
 
 
 

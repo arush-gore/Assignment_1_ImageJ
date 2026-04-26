@@ -42,9 +42,17 @@ Fiji automatically gave me the distance in pixels of the line I had drawn.
 I set the known distance to "100", and the Unit of Length to "um" (micrometre), corresponding to the scale in the original picture.  
 <img width="249" height="290" alt="image" src="https://github.com/user-attachments/assets/4c749601-cf35-4371-bf2d-ae5aeafbe8d3" />  
 
+# Step 7: Set Measurements  
+Analyze --> Set Measurements  
+After going through what each checkbox does, I decided to select the following ones-  
+1. Area: To measure size of each embryo in um^2  
+2. Centroid: X and Y coordinates of centre point of each embryo  
+3. Perimeter: Outline/edge length of each embryo  
+4. Shape Descriptors: To obtain circularity to check roundness of each embryo.
+<img width="294" height="455" alt="image" src="https://github.com/user-attachments/assets/05b235b7-880f-45f8-a84a-47d696cc3261" />
 
-
-
+# Step 8: Analyzing Particles  
+Analyze --> Analyze Particles  
 
 
 

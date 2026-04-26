@@ -67,10 +67,9 @@ I received 3 outputs-
 1. Results: This contained each embryo serially numbered with its Area, X and Y coordinates of Centroid, Perimeter, Circularity, AR (Aspect Ratio), Roundness and Solidity.  
 2. Summary: This contained Count, Total Area, Average Size, %Area, Average Perimeter, Avergae Circularity and and Average Solidity.  
 3. Drawing: This contained the Outlines of each embryo, numbered serially as per the Results file.
-<img width="892" height="713" alt="image" src="https://github.com/user-attachments/assets/ab4aa4b2-591a-498b-be59-d47932684270" />
+<img width="892" height="713" alt="image" src="https://github.com/user-attachments/assets/ab4aa4b2-591a-498b-be59-d47932684270" />  
 
-
-**# I have attached the Results, Summary, the Final Processed Image, and the Original Image in `main`.**
+# **I have attached the Results, Summary, the Final Processed Image, and the Original Image in `main`.**
 
 
 
